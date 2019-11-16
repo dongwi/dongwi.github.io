@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，已经对应的方法。">
+<meta name="description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，以及相关的感悟。">
 <meta name="keywords" content="gorm,golang">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gorm">
-<meta property="og:url" content="http://yoursite.com/2019/11/16/gorm/index.html">
+<meta property="og:url" content="http://blog.dongwei.com/2019/11/16/gorm/index.html">
 <meta property="og:site_name" content="大头乐园">
-<meta property="og:description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，已经对应的方法。">
+<meta property="og:description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，以及相关的感悟。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-16T08:37:06.551Z">
+<meta property="og:updated_time" content="2019-11-16T13:57:44.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gorm">
-<meta name="twitter:description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，已经对应的方法。">
+<meta name="twitter:description" content="gorm是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：gorm中文手册 gorm虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，以及相关的感悟。">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/11/16/gorm/">
+  <link rel="canonical" href="http://blog.dongwei.com/2019/11/16/gorm/">
 
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/16/gorm/">
+    <link itemprop="mainEntityOfPage" href="http://blog.dongwei.com/2019/11/16/gorm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dong Wei">
@@ -357,10 +357,10 @@
 
       
         <p><a href="https://github.com/jinzhu/gorm" target="_blank" rel="noopener">gorm</a>是golang中的一种ORM技术，因为由国人开发，因此在国内市场中使用较多，且文档也相对丰富。在开发过程中主要参考社区贡献的手册：<a href="http://gorm.io/zh_CN/docs/index.html" target="_blank" rel="noopener">gorm中文手册</a></p>
-<h1 id="gorm"><a href="#gorm" class="headerlink" title="gorm"></a>gorm</h1><p>虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，已经对应的方法。</p>
+<h1 id="gorm"><a href="#gorm" class="headerlink" title="gorm"></a>gorm</h1><p>虽然社区的中文手册已经很完美了，但是在实际使用过程中发现，正是由于其过于完美，往往会找不到重点，因此这里主要记录一下使用过程中踩到的各种坑，以及相关的感悟。</p>
 <a id="more"></a>
 
-<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><p><code>gorm</code>中的关系有：</p>
+<h1 id="表关系"><a href="#表关系" class="headerlink" title="表关系"></a>表关系</h1><p><code>gorm</code>中的关系有：</p>
 <ol>
 <li>belong to</li>
 <li>has one</li>
@@ -388,6 +388,11 @@
 <figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> user_language <span class="keyword">struct</span> &#123;</span><br><span class="line">    user_id <span class="keyword">uint</span> <span class="comment">//user的id</span></span><br><span class="line">    language_id <span class="keyword">uint</span> <span class="comment">// language的id</span></span><br><span class="line">    native <span class="keyword">bool</span>  <span class="comment">//表示是否是母语</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>但是<code>gorm</code>好像不允许自定义关系表。因此只能通过raw sql方式对关系表进行修改，增加相应的字段，从而满足需求。</p>
+<h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><p>对数据库表的操作主要有增删改查，其中对于没有关联关系的表的删除比较简单，直接通过gorm的create，update等进行操作即可；但如果表格之间有关联关系，则需要通过gorm的Association来进行处理。</p>
+<p>社区文档中对于增删查改的描述，个人觉得比较分散，这里添上自己的理解，重新组织一次。</p>
+<h2 id="create"><a href="#create" class="headerlink" title="create"></a>create</h2><p>对于单个schema增加一条记录比较简单，但是对于有关联关系的schema，则需要通过Association来处理。例如上面的User和Language的关系，或者User和Credit的关系。</p>
+<h3 id="增加一行记录"><a href="#增加一行记录" class="headerlink" title="增加一行记录"></a>增加一行记录</h3><h3 id="增加关联关系"><a href="#增加关联关系" class="headerlink" title="增加关联关系"></a>增加关联关系</h3><h2 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h2><p>在有关联关系的Schema的删除，不仅要删除各自的真实记录，还需要删除两者之间的关联关系（针对many2many的情况）</p>
+<h3 id="删除某行记录"><a href="#删除某行记录" class="headerlink" title="删除某行记录"></a>删除某行记录</h3><h3 id="删除关联关系"><a href="#删除关联关系" class="headerlink" title="删除关联关系"></a>删除关联关系</h3><h2 id="update"><a href="#update" class="headerlink" title="update"></a>update</h2><h3 id="更新表的某个字段"><a href="#更新表的某个字段" class="headerlink" title="更新表的某个字段"></a>更新表的某个字段</h3><h3 id="更新表之间的关联关系"><a href="#更新表之间的关联关系" class="headerlink" title="更新表之间的关联关系"></a>更新表之间的关联关系</h3><h2 id="get"><a href="#get" class="headerlink" title="get"></a>get</h2><p><code>gorm</code>的查询方法</p>
 
       
     </div>
@@ -408,7 +413,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2019/11/16/gorm/" title="gorm">http://yoursite.com/2019/11/16/gorm/</a>
+    <a href="http://blog.dongwei.com/2019/11/16/gorm/" title="gorm">http://blog.dongwei.com/2019/11/16/gorm/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -590,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gorm"><span class="nav-text">gorm</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关系"><span class="nav-text">关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#belong-to"><span class="nav-text">belong to</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#has-one"><span class="nav-text">has one</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#has-many"><span class="nav-text">has many</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#many2many"><span class="nav-text">many2many</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义关系表"><span class="nav-text">自定义关系表</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gorm"><span class="nav-text">gorm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表关系"><span class="nav-text">表关系</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#belong-to"><span class="nav-text">belong to</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#has-one"><span class="nav-text">has one</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#has-many"><span class="nav-text">has many</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#many2many"><span class="nav-text">many2many</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义关系表"><span class="nav-text">自定义关系表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本操作"><span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#create"><span class="nav-text">create</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加一行记录"><span class="nav-text">增加一行记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加关联关系"><span class="nav-text">增加关联关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#delete"><span class="nav-text">delete</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#删除某行记录"><span class="nav-text">删除某行记录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除关联关系"><span class="nav-text">删除关联关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#update"><span class="nav-text">update</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更新表的某个字段"><span class="nav-text">更新表的某个字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新表之间的关联关系"><span class="nav-text">更新表之间的关联关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#get"><span class="nav-text">get</span></a></li></ol></li></ol></div>
             
 
           </div>
