@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="java,microservice,">
+  <meta name="keywords" content="系统架构,">
 
 
 
@@ -83,20 +83,18 @@
 
 
 
-<meta name="description" content="微服务一直在听说微服务这个名称，但是对其没有多深的了解，比如：  微服务需要包含哪些组件 现有的微服务架构分别实现了哪些组件 这些组件哪些又是必要的 组件之间的关系">
-<meta name="keywords" content="java,microservice">
+<meta name="description" content="系统架构设计过程与面向对象设计过程有很多相同之处，只是面向对象设计过程中对应的是类，软件架构设计过程中对应的是服务/模块。系统架构设计的主要目的就是为了提高服务的可维护性，扩展性，复用性。 系统架构设计方法">
+<meta name="keywords" content="系统架构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="microservice">
-<meta property="og:url" content="http://blog.dongwei.tech/2019/10/17/microservice/index.html">
+<meta property="og:title" content="系统架构">
+<meta property="og:url" content="http://blog.dongwei.tech/2020/01/20/architecture/index.html">
 <meta property="og:site_name" content="大🐻乐园">
-<meta property="og:description" content="微服务一直在听说微服务这个名称，但是对其没有多深的了解，比如：  微服务需要包含哪些组件 现有的微服务架构分别实现了哪些组件 这些组件哪些又是必要的 组件之间的关系">
+<meta property="og:description" content="系统架构设计过程与面向对象设计过程有很多相同之处，只是面向对象设计过程中对应的是类，软件架构设计过程中对应的是服务/模块。系统架构设计的主要目的就是为了提高服务的可维护性，扩展性，复用性。 系统架构设计方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://s2.51cto.com/oss/201807/29/b0b849f70a496da69fd52a5418c85558.jpg-wh_651x-s_3071060219.jpg">
-<meta property="og:updated_time" content="2019-11-16T07:07:13.737Z">
+<meta property="og:updated_time" content="2020-01-20T10:19:59.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="microservice">
-<meta name="twitter:description" content="微服务一直在听说微服务这个名称，但是对其没有多深的了解，比如：  微服务需要包含哪些组件 现有的微服务架构分别实现了哪些组件 这些组件哪些又是必要的 组件之间的关系">
-<meta name="twitter:image" content="https://s2.51cto.com/oss/201807/29/b0b849f70a496da69fd52a5418c85558.jpg-wh_651x-s_3071060219.jpg">
+<meta name="twitter:title" content="系统架构">
+<meta name="twitter:description" content="系统架构设计过程与面向对象设计过程有很多相同之处，只是面向对象设计过程中对应的是类，软件架构设计过程中对应的是服务/模块。系统架构设计的主要目的就是为了提高服务的可维护性，扩展性，复用性。 系统架构设计方法">
 
 
 
@@ -126,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.dongwei.tech/2019/10/17/microservice/">
+  <link rel="canonical" href="http://blog.dongwei.tech/2020/01/20/architecture/">
 
 
 
 
 
-  <title>microservice | 大🐻乐园</title>
+  <title>系统架构 | 大🐻乐园</title>
   
 
 
@@ -269,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.dongwei.tech/2019/10/17/microservice/">
+    <link itemprop="mainEntityOfPage" href="http://blog.dongwei.tech/2020/01/20/architecture/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Dong Wei">
@@ -286,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">microservice</h1>
+          <h1 class="post-title" itemprop="name headline">系统架构</h1>
         
 
         <div class="post-meta">
@@ -298,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-17T14:36:35+08:00">
-                2019-10-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-20T17:42:21+08:00">
+                2020-01-20
               </time>
             
 
@@ -314,34 +312,12 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-16T15:07:13+08:00">
-                2019-11-16
+              <time title="更新于" itemprop="dateModified" datetime="2020-01-20T18:19:59+08:00">
+                2020-01-20
               </time>
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术总结/" itemprop="url" rel="index">
-                    <span itemprop="name">技术总结</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -370,26 +346,22 @@
       
 
       
-        <h1 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h1><p>一直在听说微服务这个名称，但是对其没有多深的了解，比如：</p>
-<ol>
-<li>微服务需要包含哪些组件</li>
-<li>现有的微服务架构分别实现了哪些组件</li>
-<li>这些组件哪些又是必要的</li>
-<li>组件之间的关系</li>
-</ol>
-<a id="more"></a>
-<p>通过对各位大神的学习，尝试解决上述几个问题</p>
-<ol>
-<li><p>一般而言，微服务需要包含：<br> a. 服务注册与发现<br> b. 服务消费<br> c. 断路器<br> d. 路由网关<br> e. 配置管理 </p>
-</li>
-<li><p>在java领域，提到微服务就是Spring Cloud。Spring Cloud提供了一站式的解决方案，也就是使用spring cloud，只需要通过一些配置或注解就能实现微服务所需要的所有组件，生态很好，使用也方便。但是在python领域，有点名声的微服务框架就是nameko，其实叫框架都有点过分了，nameko的关注点在开发单个个体服务，它能很方便的为服务提供HTTP请求，RPC，webSocket等能力。在go领域，听的较多的是go-micro，相对与nameko有一点完善，有点想Spring Cloud靠拢的意思，提供了服务注册发现和消息队列，但是与Spring Cloud生态相比还是差距太远。</p>
-</li>
-<li><p>个人见解，其实上述组件都可以不需要。微服务的重点不在于框架，而在于服务的划分上，服务之间尽量保证高内聚，低耦合，同时能独立部署，那么就可以认为是一个微服务系统。例如服务注册与发现，它仅仅是为了解耦服务的提供方与服务消费方之间固定的host信息，在没有这个组件的情况下，会加大服务提供方和服务消费方的耦合。例如当服务提供方地址变化后，服务消费方需要修改配置文件，并重新部署；有这个组件，那么服务服务提供方地址变化，服务消费方完全可以不感知。</p>
-</li>
-<li><p>组件之间的关系，那就是时候祭出这张图了。</p>
-</li>
-</ol>
-<p><img src="https://s2.51cto.com/oss/201807/29/b0b849f70a496da69fd52a5418c85558.jpg-wh_651x-s_3071060219.jpg" alt="image"></p>
+        <p>系统架构设计过程与面向对象设计过程有很多相同之处，只是面向对象设计过程中对应的是类，软件架构设计过程中对应的是服务/模块。系统架构设计的主要目的就是为了提高服务的可维护性，扩展性，复用性。</p>
+<h1 id="系统架构设计方法"><a href="#系统架构设计方法" class="headerlink" title="系统架构设计方法"></a>系统架构设计方法</h1><a id="more"></a>
+
+<h2 id="合理地将功能划分到不同模块"><a href="#合理地将功能划分到不同模块" class="headerlink" title="合理地将功能划分到不同模块"></a>合理地将功能划分到不同模块</h2><p>就是将合适的功能放到合适的模块中。合理地划分模块，从而做到模块层面的高内聚，低耦合。</p>
+<p>一般来说，下层系统不会包含太多上层系统的业务信息，但是上层系统可以包含下层系统的业务信息。</p>
+<p>怎么判断哪些模块划分合理？如果一个功能的修改或添加，需要跨团队，跨项目，跨系统才行，则说明模块划分的不够合理，职责不清晰，耦合严重。</p>
+<h2 id="设计模式与模块之间的交互关系"><a href="#设计模式与模块之间的交互关系" class="headerlink" title="设计模式与模块之间的交互关系"></a>设计模式与模块之间的交互关系</h2><p>系统之间的交互方式有两种；一种是：同步接口调用；另一种是：消息中间件异步调用。一般而言，上下层系统之间的调用倾向于通过==同步接口==；同层之间的调用倾向于==异步消息调用==。</p>
+<h2 id="接口，数据库，业务模型设计"><a href="#接口，数据库，业务模型设计" class="headerlink" title="接口，数据库，业务模型设计"></a>接口，数据库，业务模型设计</h2><p>数据库和接口的设计非常重要，一旦设计好并投入使用后，这两部分都不能轻易改动。改动数据库表结构，需要涉及到数据的迁移和适配；改动接口则需要推动接口的使用者做相应的代码修改。这两种情况，即使很小的修改，执行起来都非常麻烦。因此在数据库和接口设计上，一定要多花心思和时间，不可随意。</p>
+<p>但业务模型则属于内部实现，不涉及被外部依赖的接口，也不包含持久化的数据，对修改的容忍性大。</p>
+<h3 id="接口设计"><a href="#接口设计" class="headerlink" title="接口设计"></a>接口设计</h3><p>接口设计要符合单一职责原则，粒度越小越通用。但是接口粒度太小会带来一些问题，比如一个功能的实现需要调用多个小接口，一方面如果接口走网络调用，则会影响接口性能，另一方面，本该一个接口中完成的原子操作，拆分成多个小接口后，就会涉及分布式事物的数据一致性。所以为了兼顾易用性和性能，可以使用==外观设计模式==，在职责单一的细粒度接口上，再封装一层粗粒度接口对外提供服务。</p>
+<h3 id="业务模型设计"><a href="#业务模型设计" class="headerlink" title="业务模型设计"></a>业务模型设计</h3><p>大部分业务系统的开发都可以分为Controller，Service，Repository。</p>
+<ul>
+<li>Controller负责暴露接口；</li>
+<li>Service负责核心业务逻辑；</li>
+<li>Repository负责数据读写；</li>
+</ul>
 
       
     </div>
@@ -419,7 +391,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.dongwei.tech/2019/10/17/microservice/" title="microservice">http://blog.dongwei.tech/2019/10/17/microservice/</a>
+    <a href="http://blog.dongwei.tech/2020/01/20/architecture/" title="系统架构">http://blog.dongwei.tech/2020/01/20/architecture/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -434,9 +406,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-            <a href="/tags/microservice/" rel="tag"># microservice</a>
+            <a href="/tags/系统架构/" rel="tag"># 系统架构</a>
           
         </div>
       
@@ -449,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/10/16/kong/" rel="next" title="kong 初试">
-                <i class="fa fa-chevron-left"></i> kong 初试
+              <a href="/2020/01/20/pattern/" rel="next" title="设计模式">
+                <i class="fa fa-chevron-left"></i> 设计模式
               </a>
             
           </div>
@@ -459,8 +429,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/10/22/casbin/" rel="prev" title="casbin">
-                casbin <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/27/java-environment/" rel="prev" title="java多环境配置">
+                java多环境配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -606,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#微服务"><span class="nav-text">微服务</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#系统架构设计方法"><span class="nav-text">系统架构设计方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#合理地将功能划分到不同模块"><span class="nav-text">合理地将功能划分到不同模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计模式与模块之间的交互关系"><span class="nav-text">设计模式与模块之间的交互关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接口，数据库，业务模型设计"><span class="nav-text">接口，数据库，业务模型设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#接口设计"><span class="nav-text">接口设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务模型设计"><span class="nav-text">业务模型设计</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
