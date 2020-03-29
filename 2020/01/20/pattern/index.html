@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
+<meta name="description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性，增加新的功能时，是否很方便 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
 <meta name="keywords" content="design-pattern">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式">
 <meta property="og:url" content="http://blog.dongwei.tech/2020/01/20/pattern/index.html">
 <meta property="og:site_name" content="大🐻乐园">
-<meta property="og:description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
+<meta property="og:description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性，增加新的功能时，是否很方便 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-27T03:22:25.345Z">
+<meta property="og:updated_time" content="2020-03-29T15:23:09.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式">
-<meta name="twitter:description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
+<meta name="twitter:description" content="最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：  可维护性 扩展性，增加新的功能时，是否很方便 复用性  因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。">
 
 
 
@@ -312,8 +312,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-27T11:22:25+08:00">
-                2020-02-27
+              <time title="更新于" itemprop="dateModified" datetime="2020-03-29T23:23:09+08:00">
+                2020-03-29
               </time>
             
           </span>
@@ -371,13 +371,31 @@
         <p>最近在学习王争的《设计模式之美》，根据自己的体会简单做一下记录。设计模式从提出到现在已经20多年了，其本质上是为了提高代码质量，主要包括如下几个方面：</p>
 <ol>
 <li>可维护性</li>
-<li>扩展性</li>
+<li>扩展性，增加新的功能时，是否很方便</li>
 <li>复用性</li>
 </ol>
 <p>因为在设计模式中，一个设计思想或者模式，其分割并没有那么明显，但有纠结或有疑问时，可以回到这三个概念上。因为设计本身没有最优解，只有最合适。</p>
 <a id="more"></a>
 
+<p>设计模式可以分为三大类：</p>
+<ol>
+<li>创建型模式，主要解决对象的创建问题<br> 1.1 简单工厂模式<br> 1.2 工厂模式<br> 1.3 抽象工厂模式<br> 1.4 创建者模式<br> 1.5 原型模式<br> 1.6 单例模式</li>
+<li>结构型模式：主要解决对象的组成，以及对应之间的依赖关系<br> 2.1 适配器模式<br> 2.2 代理模式<br> 2.3 装饰器模式<br> 2.4 桥接模式<br> 2.5 组合模式<br> 2.6 外观模式<br> 2.7 享元模式</li>
+<li>行为型模式：主要解决对象之间如何交互，对象自己行为定义<br> 3.1 观察者模式<br> 3.2 状态模式<br> 3.3 策略模式<br> 3.4 职责链模式<br> 3.5 命令模式<br> 3.6 访问者模式<br> 3.7 调停模式<br> 3.8 备忘录模式<br> 3.9 迭代器模式<br> 3.10 模版模式<br> 3.11 策略模式</li>
+</ol>
+<h2 id="简单工厂模式"><a href="#简单工厂模式" class="headerlink" title="简单工厂模式"></a>简单工厂模式</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteProduct1</span><span class="params">(Product)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'concreteProduct 1'</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteProduct2</span><span class="params">(Product)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'concreteProduct 2'</span>)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ProductFactory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self, product)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="string">'product1'</span> == product:</span><br><span class="line">            <span class="keyword">return</span> ConcreteProduct1()</span><br><span class="line">        <span class="keyword">elif</span> <span class="string">'product2'</span> == product:</span><br><span class="line">            <span class="keyword">return</span> ConcreteProduct2()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">"type error"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    factory = ProductFactory()</span><br><span class="line">    product = factory.create(<span class="string">'product1'</span>)</span><br><span class="line">    product.name()</span><br></pre></td></tr></table></figure>
 
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：<br>    1. 实现简单<br>    2. 客户端只需要给定对应的产品名就能生成对应的产品<br>缺点：<br>    1. 新增产品时，需要修改工厂类，因为产品生产的判断逻辑是在工厂中实现的</p>
+<h2 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h2><p>针对简单工厂模式的问题，衍生了工厂模式。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ProductFactory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product1Factory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span> -&gt; Product:</span></span><br><span class="line">        <span class="keyword">return</span> ConcreteProduct1()</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product2Factory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span> -&gt; Product:</span></span><br><span class="line">        <span class="keyword">return</span> ConcreteProduct2()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    factory = Product1Factory()</span><br><span class="line">    product = factory.create()</span><br><span class="line">    product.name()</span><br><span class="line"></span><br><span class="line">    factory = Product2Factory()</span><br><span class="line">    product = factory.create()</span><br><span class="line">    product.name()</span><br></pre></td></tr></table></figure>
+
+<h3 id="优缺点-1"><a href="#优缺点-1" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：<br>    1. 增加新的产品时，不需要修改工厂类</p>
+<p>缺点：<br>    1. 要维护的类增加类，每个产品都新增了对应的工厂类<br>    2. 客户端需要直到具体的工厂类</p>
+<h2 id="抽象工厂"><a href="#抽象工厂" class="headerlink" title="抽象工厂"></a>抽象工厂</h2><p>工厂类生成的对象都是同一类产品，例如都是发动机，轮胎，无法生成一个产品簇，例如一个汽车。抽象工厂模式就是针对这种场景儿设计的工厂模式。</p>
+<p>加入一个汽车，只需要4个轮胎和一个发动机就可以类。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Tire</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ContinentTire</span><span class="params">(Tire)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'continent tire run'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">MichelinTire</span><span class="params">(Tire)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'michelin tire run'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">TireFactory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ContinueTireFactory</span><span class="params">(TireFactory)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> MichelinTire()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">MichelinTireFactory</span><span class="params">(TireFactory)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> MichelinTire()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Engine</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">BMWEngine</span><span class="params">(Engine)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'BMW Engine'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RollsEngine</span><span class="params">(Engine)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'Rolls Engine'</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">EngineFactory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">BMWEngineFactory</span><span class="params">(EngineFactory)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> BMWEngine()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">RollsEngineFactory</span><span class="params">(EngineFactory)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> RollsEngine()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">CarFactory</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getTire</span><span class="params">(self, TireFactory)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> TireFactory().create()</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getEngine</span><span class="params">(self, EngineFactory)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> EngineFactory().create()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getCar</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.engine = self.getEngine()</span><br><span class="line">        self.tire = self.getTire()</span><br><span class="line">        <span class="keyword">return</span> self</span><br><span class="line"></span><br><span class="line"><span class="comment"># def BMWCarFactory(CarFactory):</span></span><br><span class="line"><span class="comment">#     def getEngine(self):</span></span><br><span class="line"><span class="comment">#         return BMWEngineFactory().create()</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">#     def getTire(self):</span></span><br><span class="line"><span class="comment">#         return MichelinTireFactory().create()</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># def RollsCarFactory(CarFactory):</span></span><br><span class="line"><span class="comment">#     def getEngine(self):</span></span><br><span class="line"><span class="comment">#         return RollsEngineFactory().create()</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">#     def getTire(self):</span></span><br><span class="line"><span class="comment">#         return MichelinTireFactory().create()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># def makeCar(factory):</span></span><br><span class="line"><span class="comment">#     return factory.getCar()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment"># factory = get()</span></span><br><span class="line">    <span class="comment"># car = makeCar(factory)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="优缺点-2"><a href="#优缺点-2" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：<br>    1.<br>缺点：<br>    1. </p>
 
       
     </div>
@@ -502,8 +520,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -518,7 +545,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -540,7 +567,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -573,6 +600,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单工厂模式"><span class="nav-text">简单工厂模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优缺点"><span class="nav-text">优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工厂模式"><span class="nav-text">工厂模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优缺点-1"><span class="nav-text">优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象工厂"><span class="nav-text">抽象工厂</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优缺点-2"><span class="nav-text">优缺点</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
